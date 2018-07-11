@@ -7,6 +7,10 @@ class App extends Component {
     return (
       <div>
         <SocialCard />
+        <SocialCard />
+        <SocialCard />
+        <SocialCard />
+        <SocialCard />
       </div>
     );
   }
