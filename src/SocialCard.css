@@ -1,44 +1,55 @@
+
 .SocialCard-container {
     width: 250px;
-    height: 250px;
+    border-radius: 5px;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
-    margin: 30px;
-
+    align-items: center;
+    box-shadow: 5px 3px 10px #6d6a6a;
 }
 .SocialCard-image {
-    border: 1px solid maroon;
     display: flex;
     justify-content: center;
     align-content: center;
 }
 
+.SocialCard-image img {
+    border-radius: 3px;
+}
+
 .SocialCard-summary{
+    width: 90%;
+    height: 0;
     position: relative;
-    top: 50px;
-    left: 50px;
+    top: 1rem;
+    display: flex;
+    justify-content: space-between;
 }
 .SocialCard-interactions{
-    background-color: lightgray;
-    width: 100%;
-    border: 1px solid maroon;
+    width: inherit;
+    border: 1px solid rgba(125, 125, 125, 0.075);
+    flex: 1;
+    display: flex;
+    justify-content: space-around;
 }
 .SocialCard-button {
     appearance: none;
     border: none;
     border-radius: 3px;
     width: 3rem;
+    height: 1.25rem;
     background-color: grey;
     margin: 0.5rem 1.5rem ;
 }
+
 .circle {
     border-radius: 100%;
     width: 1.5rem;
     height: 1.5rem;
-    display: inline-block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .like {
     background-color: lightskyblue;
