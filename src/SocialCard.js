@@ -4,6 +4,9 @@ import "./SocialCard.css";
 import PropTypes from 'prop-types';
 
 class SocialCard extends Component {
+  static propTypes = {
+    imageSrc: PropTypes.string.isRequired
+  }
   constructor(props) {
     super(props);
     this.state = {
@@ -53,8 +56,12 @@ class SocialCard extends Component {
   }
 }
 
-SocialCard.PropTypes = {
-  imageSrc: PropTypes.string.isRequired
-};
+
+// // legacy proptype docs way
+// SocialCard.PropTypes = {
+//   imageSrc: PropTypes.string.isRequired
+// };
+
+
 
 export default SocialCard;
