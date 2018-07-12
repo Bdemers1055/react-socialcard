@@ -1,5 +1,6 @@
 /* eslint-disable */
 import React, { Component } from 'react';
+import Layout from './Layout';
 import SocialCard from './SocialCard';
 import Header from './Header';
 import Footer from './Footer';
@@ -24,7 +25,9 @@ class App extends Component {
     return (
       <div className="appContainer">
         <Header title="Cat Kitties" />
-        {cards}
+        <Layout>
+          {cards}
+        </Layout>
         <Footer />
       </div>
     );
