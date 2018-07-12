@@ -1,6 +1,8 @@
 .layoutContainer {
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    margin: 1.5rem;
+    margin-left: 6rem;
+    margin-right: 6rem;
 }
