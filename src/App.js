@@ -1,6 +1,7 @@
 /* eslint-disable */
 import React, { Component } from 'react';
 import SocialCard from './SocialCard';
+import Header from './Header';
 import "./App.css";
 
 class App extends Component {
@@ -21,6 +22,7 @@ class App extends Component {
     const cards = this.state.imageUrls.map((url) => <SocialCard imageSrc={url} key={url} />)
     return (
       <div className="appContainer">
+        <Header />
         {cards}
       </div>
     );
