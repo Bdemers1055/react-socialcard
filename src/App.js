@@ -1,6 +1,8 @@
 /* eslint-disable */
 import React, { Component } from 'react';
-import Layout from './Layout';
+import Main from './Main';
+import SocialCardLayout from './Layout';
+import SocialCardList from './SocialCardList';
 import SocialCard from './SocialCard';
 import Header from './Header';
 import Footer from './Footer';
@@ -25,9 +27,9 @@ class App extends Component {
     return (
       <div>
         <Header title="Cat Kitties" />
-        <Layout>
-          {cards}
-        </Layout>
+        <Main>
+          <SocialCardList imageUrls={this.state.imageUrls} />
+        </Main>
         <Footer />
       </div>
     );
